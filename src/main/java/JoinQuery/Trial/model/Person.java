@@ -12,6 +12,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Data
 public class Person implements Serializable {
 
+//    Entity with an affinity key
     private static final AtomicLong ID_GEN = new AtomicLong();
     public static final String ORG_SALARY_IDX = "ORG_SALARY_IDX";
     @QuerySqlField(index = true)
